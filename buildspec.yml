@@ -1,0 +1,19 @@
+version: 0.2
+
+phases:
+  # install:
+  #   runtime-versions:
+  #     java: corretto11
+  pre_build:
+    commands:
+      - echo this is my buld spec for lambda test...
+  build:
+    commands:
+      - echo Build started on `date` . this is my buld spec for lambda test...
+      # - mvn install
+  post_build:
+    commands:
+      - echo Build completed on `date` . this is my buld spec for lambda test...
+artifacts:
+  files:
+    '**/*'
